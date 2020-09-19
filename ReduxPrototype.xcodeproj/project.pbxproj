@@ -8,18 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		DE5712B7251636F40069458F /* ReduxPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712B6251636F40069458F /* ReduxPrototypeApp.swift */; };
-		DE5712B9251636F40069458F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712B8251636F40069458F /* ContentView.swift */; };
 		DE5712BB251636F70069458F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5712BA251636F70069458F /* Assets.xcassets */; };
 		DE5712BE251636F70069458F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5712BD251636F70069458F /* Preview Assets.xcassets */; };
+		DE5712CD251637920069458F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712CC251637920069458F /* HomeView.swift */; };
+		DE5712D2251637A60069458F /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712D1251637A60069458F /* PostsView.swift */; };
+		DE5712D8251637D40069458F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712D7251637D40069458F /* CommentsView.swift */; };
+		DE5712DD251637F00069458F /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712DC251637F00069458F /* AlbumsView.swift */; };
+		DE8FAA82251639E1004DFA0F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA81251639E1004DFA0F /* Store.swift */; };
+		DE8FAA85251639FC004DFA0F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA84251639FC004DFA0F /* AppState.swift */; };
+		DE8FAA8825163A16004DFA0F /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA8725163A16004DFA0F /* HomeState.swift */; };
+		DE8FAA8B25163A28004DFA0F /* PostsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA8A25163A28004DFA0F /* PostsState.swift */; };
+		DE8FAA8F25163A54004DFA0F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA8E25163A54004DFA0F /* Post.swift */; };
+		DE8FAA9325163B52004DFA0F /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9225163B52004DFA0F /* AppEvent.swift */; };
+		DE8FAA9625163B5F004DFA0F /* PostsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */; };
+		DE8FAA9925163B74004DFA0F /* HomeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9825163B74004DFA0F /* HomeEvent.swift */; };
+		DE8FAA9C25163BBF004DFA0F /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9B25163BBF004DFA0F /* AppReducer.swift */; };
+		DE8FAA9F25163C05004DFA0F /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9E25163C05004DFA0F /* HomeReducer.swift */; };
+		DE8FAAA225163C33004DFA0F /* PostsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA125163C33004DFA0F /* PostsReducer.swift */; };
+		DE8FAAA525163D53004DFA0F /* Store+Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA425163D53004DFA0F /* Store+Posts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE5712B3251636F40069458F /* ReduxPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5712B6251636F40069458F /* ReduxPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxPrototypeApp.swift; sourceTree = "<group>"; };
-		DE5712B8251636F40069458F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE5712BA251636F70069458F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5712BD251636F70069458F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5712BF251636F70069458F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5712CC251637920069458F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE5712D1251637A60069458F /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		DE5712D7251637D40069458F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		DE5712DC251637F00069458F /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		DE8FAA81251639E1004DFA0F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DE8FAA84251639FC004DFA0F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DE8FAA8725163A16004DFA0F /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		DE8FAA8A25163A28004DFA0F /* PostsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsState.swift; sourceTree = "<group>"; };
+		DE8FAA8E25163A54004DFA0F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DE8FAA9225163B52004DFA0F /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
+		DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEvent.swift; sourceTree = "<group>"; };
+		DE8FAA9825163B74004DFA0F /* HomeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEvent.swift; sourceTree = "<group>"; };
+		DE8FAA9B25163BBF004DFA0F /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		DE8FAA9E25163C05004DFA0F /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		DE8FAAA125163C33004DFA0F /* PostsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsReducer.swift; sourceTree = "<group>"; };
+		DE8FAAA425163D53004DFA0F /* Store+Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+Posts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +82,10 @@
 		DE5712B5251636F40069458F /* ReduxPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				DE5712B6251636F40069458F /* ReduxPrototypeApp.swift */,
-				DE5712B8251636F40069458F /* ContentView.swift */,
-				DE5712BA251636F70069458F /* Assets.xcassets */,
-				DE5712BF251636F70069458F /* Info.plist */,
+				DE5712CA251637840069458F /* Fetaures */,
+				DE5712C92516376C0069458F /* Supporting Files */,
+				DE5712C8251637660069458F /* Resources */,
+				DE5712C72516375F0069458F /* Application */,
 				DE5712BC251636F70069458F /* Preview Content */,
 			);
 			path = ReduxPrototype;
@@ -67,6 +97,93 @@
 				DE5712BD251636F70069458F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE5712C72516375F0069458F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712B6251636F40069458F /* ReduxPrototypeApp.swift */,
+				DE8FAA81251639E1004DFA0F /* Store.swift */,
+				DE8FAA84251639FC004DFA0F /* AppState.swift */,
+				DE8FAA9225163B52004DFA0F /* AppEvent.swift */,
+				DE8FAA9B25163BBF004DFA0F /* AppReducer.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DE5712C8251637660069458F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712BA251636F70069458F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE5712C92516376C0069458F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712BF251636F70069458F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE5712CA251637840069458F /* Fetaures */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712DB251637E90069458F /* Albums */,
+				DE5712D5251637CB0069458F /* Comments */,
+				DE5712CF251637960069458F /* Posts */,
+				DE5712CB251637880069458F /* Home */,
+			);
+			path = Fetaures;
+			sourceTree = "<group>";
+		};
+		DE5712CB251637880069458F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712CC251637920069458F /* HomeView.swift */,
+				DE8FAA8725163A16004DFA0F /* HomeState.swift */,
+				DE8FAA9825163B74004DFA0F /* HomeEvent.swift */,
+				DE8FAA9E25163C05004DFA0F /* HomeReducer.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE5712CF251637960069458F /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				DE8FAA8D25163A50004DFA0F /* Model */,
+				DE5712D1251637A60069458F /* PostsView.swift */,
+				DE8FAA8A25163A28004DFA0F /* PostsState.swift */,
+				DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */,
+				DE8FAAA125163C33004DFA0F /* PostsReducer.swift */,
+				DE8FAAA425163D53004DFA0F /* Store+Posts.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		DE5712D5251637CB0069458F /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712D7251637D40069458F /* CommentsView.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		DE5712DB251637E90069458F /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712DC251637F00069458F /* AlbumsView.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		DE8FAA8D25163A50004DFA0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE8FAA8E25163A54004DFA0F /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +255,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5712B9251636F40069458F /* ContentView.swift in Sources */,
+				DE8FAAA225163C33004DFA0F /* PostsReducer.swift in Sources */,
 				DE5712B7251636F40069458F /* ReduxPrototypeApp.swift in Sources */,
+				DE5712CD251637920069458F /* HomeView.swift in Sources */,
+				DE8FAA9F25163C05004DFA0F /* HomeReducer.swift in Sources */,
+				DE8FAA9C25163BBF004DFA0F /* AppReducer.swift in Sources */,
+				DE8FAA85251639FC004DFA0F /* AppState.swift in Sources */,
+				DE5712D8251637D40069458F /* CommentsView.swift in Sources */,
+				DE8FAAA525163D53004DFA0F /* Store+Posts.swift in Sources */,
+				DE8FAA8825163A16004DFA0F /* HomeState.swift in Sources */,
+				DE8FAA9325163B52004DFA0F /* AppEvent.swift in Sources */,
+				DE8FAA82251639E1004DFA0F /* Store.swift in Sources */,
+				DE8FAA8B25163A28004DFA0F /* PostsState.swift in Sources */,
+				DE5712D2251637A60069458F /* PostsView.swift in Sources */,
+				DE8FAA9925163B74004DFA0F /* HomeEvent.swift in Sources */,
+				DE5712DD251637F00069458F /* AlbumsView.swift in Sources */,
+				DE8FAA9625163B5F004DFA0F /* PostsEvent.swift in Sources */,
+				DE8FAA8F25163A54004DFA0F /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ReduxPrototype/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReduxPrototype/Info.plist;
+				INFOPLIST_FILE = "ReduxPrototype/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ReduxPrototype/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReduxPrototype/Info.plist;
+				INFOPLIST_FILE = "ReduxPrototype/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
