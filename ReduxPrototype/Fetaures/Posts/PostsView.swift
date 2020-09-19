@@ -11,17 +11,6 @@ struct PostsView: View {
     
     @EnvironmentObject var store: Store
     
-    private var text: String {
-        switch store.postsState.posts {
-        case .idle:
-            return "IDLE"
-        case .loading:
-            return "LOADING"
-        default:
-            return "HZ"
-        }
-    }
-    
     var body: some View {
         switch store.postsState.posts {
         case .idle:
@@ -31,8 +20,10 @@ struct PostsView: View {
                 }
         case .loading:
             ProgressView()
-        default:
-            Text("unexpected")
+        case .loaded(let posts):
+            Text("LOADED!!!!!!\n\(posts.first?.body ?? "empty")")
+        case .failed:
+            Text("FAILED!!!!!!")
         }
     }
 }

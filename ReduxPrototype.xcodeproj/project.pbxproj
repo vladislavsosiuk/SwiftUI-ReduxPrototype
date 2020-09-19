@@ -14,6 +14,7 @@
 		DE5712D2251637A60069458F /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712D1251637A60069458F /* PostsView.swift */; };
 		DE5712D8251637D40069458F /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712D7251637D40069458F /* CommentsView.swift */; };
 		DE5712DD251637F00069458F /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5712DC251637F00069458F /* AlbumsView.swift */; };
+		DE66D01825163F7700084854 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE66D01725163F7700084854 /* PostsService.swift */; };
 		DE8FAA82251639E1004DFA0F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA81251639E1004DFA0F /* Store.swift */; };
 		DE8FAA85251639FC004DFA0F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA84251639FC004DFA0F /* AppState.swift */; };
 		DE8FAA8825163A16004DFA0F /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA8725163A16004DFA0F /* HomeState.swift */; };
@@ -26,6 +27,7 @@
 		DE8FAA9F25163C05004DFA0F /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAA9E25163C05004DFA0F /* HomeReducer.swift */; };
 		DE8FAAA225163C33004DFA0F /* PostsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA125163C33004DFA0F /* PostsReducer.swift */; };
 		DE8FAAA525163D53004DFA0F /* Store+Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA425163D53004DFA0F /* Store+Posts.swift */; };
+		DE8FAAAA25163EB2004DFA0F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,7 @@
 		DE5712D1251637A60069458F /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		DE5712D7251637D40069458F /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		DE5712DC251637F00069458F /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		DE66D01725163F7700084854 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		DE8FAA81251639E1004DFA0F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		DE8FAA84251639FC004DFA0F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DE8FAA8725163A16004DFA0F /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		DE8FAA9E25163C05004DFA0F /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
 		DE8FAAA125163C33004DFA0F /* PostsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsReducer.swift; sourceTree = "<group>"; };
 		DE8FAAA425163D53004DFA0F /* Store+Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+Posts.swift"; sourceTree = "<group>"; };
+		DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		DE5712B5251636F40069458F /* ReduxPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				DE8FAAA725163E9E004DFA0F /* Common */,
 				DE5712CA251637840069458F /* Fetaures */,
 				DE5712C92516376C0069458F /* Supporting Files */,
 				DE5712C8251637660069458F /* Resources */,
@@ -158,6 +163,7 @@
 				DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */,
 				DE8FAAA125163C33004DFA0F /* PostsReducer.swift */,
 				DE8FAAA425163D53004DFA0F /* Store+Posts.swift */,
+				DE66D01725163F7700084854 /* PostsService.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -184,6 +190,22 @@
 				DE8FAA8E25163A54004DFA0F /* Post.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE8FAAA725163E9E004DFA0F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DE8FAAA825163EA3004DFA0F /* Networking */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DE8FAAA825163EA3004DFA0F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +279,11 @@
 			files = (
 				DE8FAAA225163C33004DFA0F /* PostsReducer.swift in Sources */,
 				DE5712B7251636F40069458F /* ReduxPrototypeApp.swift in Sources */,
+				DE66D01825163F7700084854 /* PostsService.swift in Sources */,
 				DE5712CD251637920069458F /* HomeView.swift in Sources */,
 				DE8FAA9F25163C05004DFA0F /* HomeReducer.swift in Sources */,
 				DE8FAA9C25163BBF004DFA0F /* AppReducer.swift in Sources */,
+				DE8FAAAA25163EB2004DFA0F /* NetworkClient.swift in Sources */,
 				DE8FAA85251639FC004DFA0F /* AppState.swift in Sources */,
 				DE5712D8251637D40069458F /* CommentsView.swift in Sources */,
 				DE8FAAA525163D53004DFA0F /* Store+Posts.swift in Sources */,

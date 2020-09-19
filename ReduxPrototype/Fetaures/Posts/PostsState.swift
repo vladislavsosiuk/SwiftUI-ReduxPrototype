@@ -13,7 +13,7 @@ struct PostsFlowState {
         case idle
         case loading
         case loaded(posts: [Post])
-        case failed(error: Error)
+        case failed
     }
     
     var posts: PostsState = .idle

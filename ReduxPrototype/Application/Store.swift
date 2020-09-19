@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class Store: ObservableObject {
     
@@ -13,7 +14,16 @@ final class Store: ObservableObject {
     
     private let reducer = AppReducer()
     
+    private var cancellables = Set<AnyCancellable>()
+    
     func dispatch(event: AppEvent) {
-        reducer.reduce(state: &state, event: event)
+        guard let publisher = reducer.reduce(state: &state, event: event) else {
+            return
+        }
+        
+        publisher
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: dispatch(event:))
+            .store(in: &cancellables)
     }
 }

@@ -9,4 +9,6 @@ import Foundation
 
 enum PostsEvent {
     case loadPosts
+    case postsLoaded(posts: [Post])
+    case postsLoadFailed
 }
