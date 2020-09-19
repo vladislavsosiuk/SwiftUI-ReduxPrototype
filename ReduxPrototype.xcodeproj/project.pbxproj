@@ -28,6 +28,7 @@
 		DE8FAAA225163C33004DFA0F /* PostsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA125163C33004DFA0F /* PostsReducer.swift */; };
 		DE8FAAA525163D53004DFA0F /* Store+Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA425163D53004DFA0F /* Store+Posts.swift */; };
 		DE8FAAAA25163EB2004DFA0F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */; };
+		DED42091251648EE00E5A97E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED42090251648EE00E5A97E /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DE8FAAA125163C33004DFA0F /* PostsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsReducer.swift; sourceTree = "<group>"; };
 		DE8FAAA425163D53004DFA0F /* Store+Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+Posts.swift"; sourceTree = "<group>"; };
 		DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DED42090251648EE00E5A97E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,13 +159,10 @@
 		DE5712CF251637960069458F /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				DED4208F251648CE00E5A97E /* Helpers */,
+				DED4208E251648C100E5A97E /* View */,
+				DED4208D251648BC00E5A97E /* Redux */,
 				DE8FAA8D25163A50004DFA0F /* Model */,
-				DE5712D1251637A60069458F /* PostsView.swift */,
-				DE8FAA8A25163A28004DFA0F /* PostsState.swift */,
-				DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */,
-				DE8FAAA125163C33004DFA0F /* PostsReducer.swift */,
-				DE8FAAA425163D53004DFA0F /* Store+Posts.swift */,
-				DE66D01725163F7700084854 /* PostsService.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -206,6 +205,34 @@
 				DE8FAAA925163EB2004DFA0F /* NetworkClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DED4208D251648BC00E5A97E /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				DE8FAA8A25163A28004DFA0F /* PostsState.swift */,
+				DE8FAA9525163B5F004DFA0F /* PostsEvent.swift */,
+				DE8FAAA125163C33004DFA0F /* PostsReducer.swift */,
+				DE8FAAA425163D53004DFA0F /* Store+Posts.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		DED4208E251648C100E5A97E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE5712D1251637A60069458F /* PostsView.swift */,
+				DED42090251648EE00E5A97E /* PostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DED4208F251648CE00E5A97E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DE66D01725163F7700084854 /* PostsService.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +322,7 @@
 				DE8FAA9925163B74004DFA0F /* HomeEvent.swift in Sources */,
 				DE5712DD251637F00069458F /* AlbumsView.swift in Sources */,
 				DE8FAA9625163B5F004DFA0F /* PostsEvent.swift in Sources */,
+				DED42091251648EE00E5A97E /* PostView.swift in Sources */,
 				DE8FAA8F25163A54004DFA0F /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

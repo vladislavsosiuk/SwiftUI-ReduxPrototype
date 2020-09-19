@@ -15,16 +15,23 @@ struct PostsView: View {
         switch store.postsState.posts {
         case .idle:
             Text("")
-                .onAppear {
-                    store.dispatch(postsEvent: .loadPosts)
-                }
+                .onAppear(perform: fetch)
         case .loading:
             ProgressView()
         case .loaded(let posts):
-            Text("LOADED!!!!!!\n\(posts.first?.body ?? "empty")")
+            List(posts, id: \.id) { post in
+                PostView(post: post)
+            }
         case .failed:
-            Text("FAILED!!!!!!")
+            VStack {
+                Text("Loading failed")
+                Button("Try again", action: fetch)
+            }
         }
+    }
+    
+    private func fetch() {
+        store.dispatch(postsEvent: .loadPosts)
     }
 }
 
