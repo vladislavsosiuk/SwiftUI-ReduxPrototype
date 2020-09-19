@@ -20,11 +20,6 @@ struct HomeView: View {
                     Image(systemName: "text.bubble")
                     Text("Comments")
                 }
-            AlbumsView()
-                .tabItem {
-                    Image(systemName: "photo.on.rectangle")
-                    Text("Albums")
-                }
         }
     }
 }
