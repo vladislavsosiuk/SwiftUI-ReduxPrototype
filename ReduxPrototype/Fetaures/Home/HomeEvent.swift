@@ -9,4 +9,5 @@ import Foundation
 
 enum HomeEvent {
     case postsFlow(event: PostsEvent)
+    case commentsFlow(event: CommentsEvent)
 }

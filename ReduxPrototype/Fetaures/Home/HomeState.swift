@@ -9,4 +9,5 @@ import Foundation
 
 struct HomeState {
     var postsFlowState = PostsFlowState()
+    var commentsFlowState = CommentsFlowState()
 }
